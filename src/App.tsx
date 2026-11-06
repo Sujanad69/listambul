@@ -261,43 +261,43 @@ Governing Law: Portuguese Labor Code (Arts. 198, 202, 268)`;
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
-            {/* Priority 1: Statutory Baseline & Overtime Accrual */}
+            {/* Priority 1: Statutory Baseline, Consecutive Rest & Overtime Accrual */}
             <div className="p-3.5 sm:p-4 rounded-xl border border-slate-200 bg-white space-y-1.5 shadow-2xs">
               <div className="flex items-center gap-2">
                 <span className="w-5 h-5 rounded-full bg-blue-600 text-white font-mono text-xs flex items-center justify-center font-bold">
                   1
                 </span>
                 <h3 className="font-bold text-slate-900 text-xs">
-                  Statutory 40-Hour Cap &amp; Overtime Reconciliation
+                  Statutory 40h Cap, Consecutive Rest &amp; Overtime
                 </h3>
               </div>
               <div className="text-[11px] font-mono text-blue-700 font-semibold">
-                Arts. 198 &amp; 268 Código do Trabalho
+                Arts. 198, 232 &amp; 268 Código do Trabalho
               </div>
               <p className="text-[11px] sm:text-xs text-slate-600 leading-relaxed pt-1">
-                Under Article 198, Portugal&apos;s full-time statutory work week is strictly 40.0 hours. The proposed 47.0-hour baseline inherently includes <strong className="font-semibold text-slate-800">7.0 hours of weekly overtime per chef</strong> (+11.25h to +14.75h under elevated covers). Management and the kitchen team must establish an official agreement to reconcile these supplementary hours through compensatory time off (<em className="italic">descanso compensatório</em>) or statutory overtime remuneration (Art. 268).
+                Under Article 198, Portugal&apos;s full-time work week is strictly 40.0 hours over 5 working days, honoring the trial&apos;s <strong className="font-semibold text-slate-800">two consecutive rest days (Wednesdays &amp; Thursdays · Art. 232)</strong>. The 47.0-hour baseline inherently includes <strong className="font-semibold text-slate-800">7.0 hours of weekly overtime per chef</strong> (+11.25h to +14.75h during surges), which must be formally reconciled via compensatory rest days (<em className="italic">descanso compensatório</em>) or statutory overtime compensation (Art. 268).
               </p>
             </div>
 
-            {/* Priority 2: Work Time Definition & Mandatory Fixed Schedule */}
+            {/* Priority 2: Work Time Definition, Fixed Schedule & 11h Rest Interval */}
             <div className="p-3.5 sm:p-4 rounded-xl border border-slate-200 bg-white space-y-1.5 shadow-2xs">
               <div className="flex items-center gap-2">
                 <span className="w-5 h-5 rounded-full bg-blue-600 text-white font-mono text-xs flex items-center justify-center font-bold">
                   2
                 </span>
                 <h3 className="font-bold text-slate-900 text-xs">
-                  Fixed Official Schedule &amp; Prep Time Recognition (<em className="italic font-bold">Horário de Trabalho</em>)
+                  Fixed Official Schedule &amp; 11-Hour Shift Rest Window
                 </h3>
               </div>
               <div className="text-[11px] font-mono text-blue-700 font-semibold">
-                Arts. 197 &amp; 215 Código do Trabalho
+                Arts. 197, 214 &amp; 215 Código do Trabalho
               </div>
               <p className="text-[11px] sm:text-xs text-slate-600 leading-relaxed pt-1">
-                Under Article 197, working hours (<em className="italic">tempo de trabalho</em>) legally commence when staff start preparatory kitchen duties (<em className="italic">início da preparação / mise en place</em>), not when the dining room opens to guests. Article 215 mandates posting an official fixed schedule (<em className="italic">mapa de horário de trabalho fixo e afixado</em>) with predetermined start times, establishing legal certainty and preventing unlogged prep hours.
+                Under Article 197, working hours legally commence when food prep begins (<em className="italic">mise en place</em>), requiring a posted schedule (<em className="italic">horário fixo e afixado</em> · Art. 215). Crucially, Article 214 mandates a <strong className="font-semibold text-slate-800">minimum 11-hour continuous rest interval between consecutive shifts</strong>, meaning morning call times following late service shutdowns (~23:45) must preserve this 11-hour recovery window to safeguard staff safety and prevent fatigue.
               </p>
             </div>
 
-            {/* Priority 3: Synchronized Crew Call & Equitable Workload */}
+            {/* Priority 3: Synchronized Crew Call & Heavy Prep Coordination */}
             <div className="p-3.5 sm:p-4 rounded-xl border border-slate-200 bg-white space-y-1.5 shadow-2xs">
               <div className="flex items-center gap-2">
                 <span className="w-5 h-5 rounded-full bg-blue-600 text-white font-mono text-xs flex items-center justify-center font-bold">
@@ -308,10 +308,10 @@ Governing Law: Portuguese Labor Code (Arts. 198, 202, 268)`;
                 </h3>
               </div>
               <div className="text-[11px] font-mono text-blue-700 font-semibold">
-                Operational Equality &amp; Workload Distribution
+                Workload Equality &amp; Flexible Prep Call Times
               </div>
               <p className="text-[11px] sm:text-xs text-slate-600 leading-relaxed pt-1">
-                While standard shift arrival is 11:45 AM, days with intensive prep, stock intake, or banquet rushes require an earlier scheduled call (such as 11:00 AM). Whatever call time is established, <strong className="font-semibold text-slate-800">all rostered kitchen staff must enter the restaurant simultaneously</strong>. Synchronous arrival guarantees that demanding prep tasks and line readiness are shared equitably across the brigade rather than burdening early arrivals.
+                While standard shift arrival is 11:45 AM, days requiring heavy mise en place, large deliveries, or high event volumes require scheduled earlier calls (such as 11:00 AM). Whatever call time is established, <strong className="font-semibold text-slate-800">all rostered kitchen staff must enter the restaurant together</strong>. Synchronous arrival guarantees that demanding prep tasks and station setups are shared equitably across the whole team rather than burdening early arrivals.
               </p>
             </div>
 
@@ -326,46 +326,10 @@ Governing Law: Portuguese Labor Code (Arts. 198, 202, 268)`;
                 </h3>
               </div>
               <div className="text-[11px] font-mono text-blue-700 font-semibold">
-                Art. 202 Código do Trabalho · Workload Balance
+                Art. 202 Código do Trabalho · Workload Balance &amp; System Fairness
               </div>
               <p className="text-[11px] sm:text-xs text-slate-600 leading-relaxed pt-1">
                 Beyond statutory overtime compliance under Article 202, an automated digital attendance system builds a transparent, professional kitchen management framework. Logging exact timestamps for arrivals, mid-day breaks, and station shutdowns provides objective data to balance daily workloads across all sections, eliminate attendance friction, and provide management with reliable operational metrics.
-              </p>
-            </div>
-
-            {/* Priority 5: Rest Period & Minimum Interval Between Shifts */}
-            <div className="p-3.5 sm:p-4 rounded-xl border border-slate-200 bg-white space-y-1.5 shadow-2xs">
-              <div className="flex items-center gap-2">
-                <span className="w-5 h-5 rounded-full bg-blue-600 text-white font-mono text-xs flex items-center justify-center font-bold">
-                  5
-                </span>
-                <h3 className="font-bold text-slate-900 text-xs">
-                  Consecutive Rest Days &amp; Minimum 11-Hour Shift Interval
-                </h3>
-              </div>
-              <div className="text-[11px] font-mono text-blue-700 font-semibold">
-                Arts. 214 &amp; 232 Código do Trabalho
-              </div>
-              <p className="text-[11px] sm:text-xs text-slate-600 leading-relaxed pt-1">
-                The trial&apos;s two consecutive rest days (Wednesdays &amp; Thursdays) are critical to maintaining staff physical recovery and kitchen morale. Furthermore, Article 214 strictly mandates a <strong className="font-semibold text-slate-800">minimum 11-hour continuous rest interval between consecutive shifts</strong>. Following late dinner service shutdowns (~23:45), morning call times must honor this 11-hour window to safeguard kitchen safety and prevent chronic exhaustion.
-              </p>
-            </div>
-
-            {/* Priority 6: Collaborative Governance & Mid-Trial Review */}
-            <div className="p-3.5 sm:p-4 rounded-xl border border-slate-200 bg-white space-y-1.5 shadow-2xs">
-              <div className="flex items-center gap-2">
-                <span className="w-5 h-5 rounded-full bg-blue-600 text-white font-mono text-xs flex items-center justify-center font-bold">
-                  6
-                </span>
-                <h3 className="font-bold text-slate-900 text-xs">
-                  Mid-Trial Calibration &amp; Overtime Settlement Review
-                </h3>
-              </div>
-              <div className="text-[11px] font-mono text-blue-700 font-semibold">
-                Trial Governance &amp; Collaborative Calibration
-              </div>
-              <p className="text-[11px] sm:text-xs text-slate-600 leading-relaxed pt-1">
-                Establish a formal mid-trial calibration meeting in mid-December between kitchen representatives and management (Ege &amp; Celine). By reviewing verified digital attendance data, both parties can collaboratively evaluate shift efficiency, fine-tune prep call times, and reconcile accrued overtime balances before heading into the peak year-end holiday service volume.
               </p>
             </div>
           </div>
