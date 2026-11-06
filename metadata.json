@@ -1,0 +1,6 @@
+{
+  "name": "Schedule Reconciliation Framework",
+  "description": "Executive operational schedule reconciliation proposal and interactive compliance dashboard for kitchen staff management under Portuguese Labor Code.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
