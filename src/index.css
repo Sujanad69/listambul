@@ -58,4 +58,8 @@
   h1 { font-size: 20px !important; line-height: 1.2 !important; }
   h2 { font-size: 11px !important; }
   p, td, th, span { font-size: 10px !important; }
+  .print-page-break {
+    break-before: page !important;
+    page-break-before: always !important;
+  }
 }

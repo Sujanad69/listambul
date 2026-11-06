@@ -227,8 +227,8 @@ Governing Law: Portuguese Labor Code (Arts. 198, 202, 268)`;
             <div className="h-px bg-gradient-to-r from-slate-200 via-slate-200 to-transparent flex-1"></div>
           </div>
 
-          {/* 2. Shift Breakdown Under Varying Operational Conditions */}
-          <section className="space-y-6 sm:space-y-8">
+          {/* 2. Shift Breakdown Under Varying Operational Conditions (Interactive Web Version) */}
+          <section className="space-y-6 sm:space-y-8 no-print">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-100 pb-3">
               <div>
                 <h2 className="text-xs font-extrabold uppercase tracking-widest text-slate-900 flex items-center gap-2">
@@ -345,6 +345,57 @@ Governing Law: Portuguese Labor Code (Arts. 198, 202, 268)`;
               onSelectViewMode={(mode) => setViewMode(mode)}
             />
           </section>
+
+          {/* Print-Only Version: 3 Dedicated Pages for Standard, Busy, and Peak */}
+          <div className="hidden print:block space-y-8">
+            {/* Page 1: Standard Baseline */}
+            <div className="print-page-break space-y-6 pt-4">
+              <div className="border-b border-slate-200 pb-2">
+                <h2 className="text-xs font-extrabold uppercase tracking-widest text-slate-900 flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-blue-600"></span>
+                  <span>2. Shift Breakdown: Standard Baseline (47.0 Hours / Week)</span>
+                </h2>
+                <p className="text-[11px] text-slate-500 mt-1">
+                  Nominal operations under normal lunch and dinner covers · +7.0h statutory overtime.
+                </p>
+              </div>
+              <GanttTimeline viewMode="standard" />
+              <ShiftDissection />
+              <ScheduleMatrixTable viewMode="standard" />
+            </div>
+
+            {/* Page 2: Busy Conditions */}
+            <div className="print-page-break space-y-6 pt-4">
+              <div className="border-b border-slate-200 pb-2">
+                <h2 className="text-xs font-extrabold uppercase tracking-widest text-slate-900 flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-blue-600"></span>
+                  <span>2. Shift Breakdown: Busy Conditions (51.25 Hours / Week)</span>
+                </h2>
+                <p className="text-[11px] text-slate-500 mt-1">
+                  Extended prep calls and delayed line shutdown due to heavy volume · +11.25h statutory overtime.
+                </p>
+              </div>
+              <GanttTimeline viewMode="busy" />
+              <ShiftDissection />
+              <ScheduleMatrixTable viewMode="busy" />
+            </div>
+
+            {/* Page 3: Peak Events */}
+            <div className="print-page-break space-y-6 pt-4">
+              <div className="border-b border-slate-200 pb-2">
+                <h2 className="text-xs font-extrabold uppercase tracking-widest text-slate-900 flex items-center gap-2">
+                  <span className="w-2 h-2 rounded-full bg-blue-600"></span>
+                  <span>2. Shift Breakdown: Peak Events &amp; Heavy Prep (54.75 Hours / Week)</span>
+                </h2>
+                <p className="text-[11px] text-slate-500 mt-1">
+                  Maximum capacity, private bookings, full inventory audits, and event service · +14.75h statutory overtime.
+                </p>
+              </div>
+              <GanttTimeline viewMode="peak" />
+              <ShiftDissection />
+              <ScheduleMatrixTable viewMode="peak" />
+            </div>
+          </div>
 
           {/* Styled Section Break Divider 2 */}
           <div className="py-3 flex items-center justify-center gap-3 no-print">
